@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our School Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our School</h1>
+    <p>Your future begins here!</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#registration">Registration</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+    <button onclick="toggleLanguage()">Kinyarwanda</button>
+  </nav>
+
+  <section id="about">
+    <h2 data-en="About Our School" data-rw="Ibyerekeye Ishuri ryacu">About Our School</h2>
+    <p data-en="We provide a friendly, modern and fun learning environment for all children." data-rw="Dutanga uburyo bwo kwigira mu buryo bugezweho, bufite ibyishimo kandi burimo ubushuti.">
+      We provide a friendly, modern and fun learning environment for all children.
+    </p>
+  </section>
+
+  <section id="news">
+    <h2 data-en="Latest News" data-rw="Amakuru Agezweho">Latest News</h2>
+    <p data-en="Our school reopening is scheduled for September 5th, 2025." data-rw="Ifungurwa ry’ishuri ryacu rizaba ku ya 5 Nzeri 2025.">
+      Our school reopening is scheduled for September 5th, 2025.
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2 data-en="Gallery" data-rw="Amashusho">Gallery</h2>
+    <img src="school_photo.jpg" alt="Our school photo" style="width:100%; max-width:600px;" />
+  </section>
+
+  <section id="registration">
+    <h2 data-en="School Registration" data-rw="Kwiyandikisha mu Ishuri">School Registration</h2>
+    <p data-en="Click the link below to fill in the registration form." data-rw="Kanda kuri link iri hasi wuzuze ifishi yo kwiyandikisha.">
+      Click the link below to fill in the registration form.
+    </p>
+    <a href="#" data-en="Registration Form" data-rw="Ifishi yo Kwiyandikisha">Registration Form</a>
+  </section>
+
+  <section id="media">
+    <h2 data-en="School Media" data-rw="Ibikoresho by'Ishuri">School Media</h2>
+    <div class="media">
+      <video width="100%" controls>
+        <source src="school_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="media">
+      <audio controls>
+        <source src="school_audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 data-en="Contact Us" data-rw="Twandikire">Contact Us</h2>
+    <p data-en="Email: info@ourschool.com | Phone: +250 788 123 456" data-rw="Imeli: info@ourschool.com | Telefone: +250 788 123 456">
+      Email: info@ourschool.com | Phone: +250 788 123 456
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Our School. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
